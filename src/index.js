@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Linking } from 'react-native';
 
-function useDeviceOrientation() {
+function useLinking() {
   const [url, setUrl] = useState(null);
   const [error, setError] = useState();
 
@@ -44,4 +44,4 @@ function useDeviceOrientation() {
   return [url, openUrl, error];
 }
 
-export default useDeviceOrientation;
+export default useLinking;
